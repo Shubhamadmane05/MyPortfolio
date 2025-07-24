@@ -12,14 +12,14 @@ const ProjectDetail = () => {
     return (
         <section style={{ backgroundColor: '#0d1b2a', minHeight: '100vh', color: '#fff' }}>
             <Navbar />
-             <div className="mt-5 pt-5 ">
-                    <button
-                        className="btn btn-outline-light"
-                        onClick={() => navigate('/projects')}
-                    >
-                        ← Back to Projects
-                    </button>
-                </div>
+            <div className="mt-5 pt-5 ">
+                <button
+                    className="btn btn-outline-light"
+                    onClick={() => navigate('/projects')}
+                >
+                    ← Back to Projects
+                </button>
+            </div>
             <div className="container py-5">
                 <h2 className="text-success fw-bold">{project.title}</h2>
                 <p className="text-muted">{project.date}</p>
@@ -31,6 +31,22 @@ const ProjectDetail = () => {
                         <li key={i}>{t}</li>
                     ))}
                 </ul>
+
+                {project.github && (
+                    <div className="mt-4">
+                        <h5>GitHub:</h5>
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-outline-light btn-sm"
+                        >
+                            View Source Code
+                        </a>
+                    </div>
+                )}
+
+
 
                 {project.video && (
                     <div className="mt-4">
