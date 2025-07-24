@@ -3,6 +3,7 @@
   background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
   color: white;
   padding-top: 80px;
+  min-height: calc(100vh - 56px);
 }
 
 .hero-image-container {

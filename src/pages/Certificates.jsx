@@ -6,6 +6,7 @@ import Nasscom from '../assets/Nasscom.jpg';
 import IStudio from '../assets/IStudio_Participation.jpg';
 import Fullstackintern from '../assets/verzeonew1.jpg';
 import 'aos/dist/aos.css';
+import Navbar from '../components/Navbar';
 
 const Certificates = () => {
   const certificateData = [
@@ -20,6 +21,8 @@ const Certificates = () => {
   ];
 
   return (
+   <>
+   <Navbar />
     <section className="py-5   "
     style={{
         backgroundColor: '#0d1b2a',
@@ -58,6 +61,7 @@ const Certificates = () => {
         </div>
       </div>
     </section>
+   </>
   );
 };
 

@@ -2,9 +2,12 @@ import React from 'react';
 import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 import 'aos/dist/aos.css';
 import ContactImage from '../assets/ContactImage.jpeg';
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
   return (
+    <>
+    <Navbar />
     <section
       id="contact"
       style={{
@@ -42,7 +45,7 @@ const Contact = () => {
               >
                 <div className="mb-3 d-flex align-items-center">
                   <FaEnvelope className="me-3 text-danger fs-4" />
-                  <span className="fs-5">shubhamadmane0530@gmail.com</span>
+                  <span className="">shubhamadmane0530@gmail.com</span>
                 </div>
                 <div className="mb-3 d-flex align-items-center">
                   <FaPhoneAlt className="me-3 text-success fs-4" />
@@ -76,6 +79,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

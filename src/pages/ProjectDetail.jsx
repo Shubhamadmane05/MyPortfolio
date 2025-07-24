@@ -12,7 +12,7 @@ const ProjectDetail = () => {
     return (
         <section style={{ backgroundColor: '#0d1b2a', minHeight: '100vh', color: '#fff' }}>
             <Navbar />
-            <div className="mt-5 pt-5 ">
+            <div className="mt-5 pt-3 ">
                 <button
                     className="btn btn-outline-light"
                     onClick={() => navigate('/projects')}
@@ -76,7 +76,7 @@ const ProjectDetail = () => {
                 {/* Back button */}
                 <div className="mt-5">
                     <button
-                        className="btn btn-outline-light"
+                        className="btn btn-outline-light mb-4"
                         onClick={() => navigate('/projects')}
                     >
                         ← Back to Projects

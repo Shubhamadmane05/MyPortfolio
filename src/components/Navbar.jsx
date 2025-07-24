@@ -1,28 +1,48 @@
-import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 
 const Navbar = () => {
+  const navRef = useRef();
+  const location = useLocation();
+
   useEffect(() => {
-    // Close navbar on link click (mobile view only)
-    const navLinks = document.querySelectorAll('.nav-link');
     const navCollapse = document.getElementById('navbarNav');
 
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (navCollapse.classList.contains('show')) {
-          new bootstrap.Collapse(navCollapse).toggle();
-        }
-      });
-    });
-  }, []);
+    // Close navbar when clicking a link
+    const handleLinkClick = () => {
+      if (navCollapse.classList.contains('show')) {
+        new window.bootstrap.Collapse(navCollapse).toggle();
+      }
+    };
+
+    // Close navbar when clicking outside
+    const handleClickOutside = (event) => {
+      if (
+        navCollapse.classList.contains('show') &&
+        navRef.current &&
+        !navRef.current.contains(event.target)
+      ) {
+        new window.bootstrap.Collapse(navCollapse).hide();
+      }
+    };
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => link.addEventListener('click', handleLinkClick));
+    document.addEventListener('click', handleClickOutside);
+
+    // Cleanup
+    return () => {
+      navLinks.forEach(link => link.removeEventListener('click', handleLinkClick));
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [location]);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light fixed-top px-4 shadow-sm">
+    <nav className="navbar navbar-expand-lg bg-light fixed-top px-3 shadow-lg" ref={navRef}>
       <div className="container-fluid">
         <Link className="navbar-brand fw-bold text-success" to="/">
           MyPortFolio
         </Link>
-
         <button
           className="navbar-toggler"
           type="button"

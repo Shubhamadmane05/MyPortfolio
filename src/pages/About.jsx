@@ -1,97 +1,20 @@
-// import React from 'react';
-// import myPhoto from '../assets/Myphoto.JPG';
-// import 'aos/dist/aos.css';
-
-// const About = () => {
-//   return (
-//     <section
-//       id="about"
-//       className="py-5 align-content-center"
-//       style={{
-//        backgroundColor: '#0d1b2a',
-//         minHeight: '100vh',
-
-//       }}
-//     >
-//       <div className="container">
-//         <h2
-//           className="text-center text-success fw-bold mb-5"
-//           data-aos="fade-down"
-//         >
-//           About Me
-//         </h2>
-
-//         <div className="row align-items-center">
-//           {/* Profile Image */}
-//           <div
-//             className="col-md-4 text-center text-white mb-4 mb-md-0"
-//             data-aos="zoom-in"
-//           >
-//             <div
-//               className="rounded-circle overflow-hidden shadow"
-//               style={{
-//                 width: '250px',
-//                 height: '250px',
-//                 margin: '0 auto',
-//               }}
-//             >
-//               <img
-//                 src={myPhoto}
-//                 alt="My Photo"
-//                 className="img-fluid"
-//                 style={{
-//                   width: '100%',
-//                   height: '100%',
-//                   objectFit: 'cover',
-//                 }}
-//               />
-//             </div>
-//           </div>
-
-//           {/* Bio */}
-//           <div className="col-md-8 text-white" data-aos="fade-left ">
-//             <p className="fs-5">
-//               Hello! I'm <strong>Shubham Admane</strong>, a passionate Full Stack Developer experienced in building web
-//               applications using <strong>Java (Spring Boot)</strong> and <strong>React.js</strong> / <strong>Next.js</strong>.
-//             </p>
-//             <p className="fs-5">
-//               I enjoy solving real-world problems through clean, maintainable code and continuously learning new technologies.
-//             </p>
-
-//             <h5 className="mt-4 fw-semibold">Tech Stack:</h5>
-//             <div className="d-flex flex-wrap gap-2 mt-2">
-//               <span className="badge bg-primary">Java</span>
-//               <span className="badge bg-danger">Spring Boot</span>
-//               <span className="badge bg-info text-dark">React.js</span>
-//               <span className="badge bg-dark">Next.js</span>
-//               <span className="badge bg-success">MySQL</span>
-//               <span className="badge bg-warning text-dark">HTML</span>
-//               <span className="badge bg-secondary">CSS</span>
-//               <span className="badge bg-primary">Bootstrap</span>
-//               <span className="badge bg-dark">Git</span>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default About;
-
 
 import React from 'react';
 import myPhoto from '../assets/Myphoto.JPG';
 import 'aos/dist/aos.css';
+import Navbar from '../components/Navbar';
 
 const About = () => {
   return (
+    <>
+    <Navbar/>
     <section
       id="about"
       className="py-5 align-content-center"
       style={{
         backgroundColor: '#0d1b2a',
         minHeight: '100vh',
+         
       }}
     >
       <div className="container">
@@ -102,25 +25,25 @@ const About = () => {
         <div className="row ">
           {/* Profile Image */}
           <div className="col-md-4 text-white mb-4 mb-md-0 d-flex justify-content-start" data-aos="zoom-in">
-  <div
-    className="rounded-circle overflow-hidden shadow"
-    style={{
-      width: '250px',
-      height: '250px',
-    }}
-  >
-    <img
-      src={myPhoto}
-      alt="My Photo"
-      className="img-fluid"
-      style={{
-        width: '100%',
-        height: '100%',
-        
-      }}
-    />
-  </div>
-</div>
+            <div
+              className="rounded-circle overflow-hidden shadow"
+              style={{
+                width: '250px',
+                height: '250px',
+              }}
+            >
+              <img
+                src={myPhoto}
+                alt="My Photo"
+                className="img-fluid"
+                style={{
+                  width: '100%',
+                  height: '100%',
+
+                }}
+              />
+            </div>
+          </div>
 
 
           {/* Bio */}
@@ -291,10 +214,9 @@ const About = () => {
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
+    </>
   );
 };
 
