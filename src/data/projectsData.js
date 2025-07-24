@@ -24,7 +24,7 @@ export const projects = [
     shortDescription:
       'Secure book borrowing system using JWT, Spring Boot, and React.',
     fullDescription:
-      'Users can browse, borrow, and track books. Admin can manage inventory. Security via JWT, user roles. Redux used for state.',
+      'The Library Management System is a secure web app with RBAC. Admins manage books using CRUD operations, while users can view and borrow books. Users track their borrowing history via JWT tokens, and admins see all borrowed books with return status. Redux handles state management for borrowing and returning books.',
     tech: ['React', 'Spring Boot', 'JWT', 'Redux'],
     github:
       'https://github.com/Shubhamadmane05/Shubhamadmane05-Library-Management-System-with-Security',

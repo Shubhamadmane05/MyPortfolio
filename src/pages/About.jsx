@@ -99,29 +99,29 @@ const About = () => {
           About Me
         </h2>
 
-        <div className="row align-items-center">
+        <div className="row ">
           {/* Profile Image */}
-          <div className="col-md-4 text-center text-white mb-4 mb-md-0" data-aos="zoom-in">
-            <div
-              className="rounded-circle overflow-hidden shadow"
-              style={{
-                width: '250px',
-                height: '250px',
-                margin: '0 auto',
-              }}
-            >
-              <img
-                src={myPhoto}
-                alt="My Photo"
-                className="img-fluid"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  
-                }}
-              />
-            </div>
-          </div>
+          <div className="col-md-4 text-white mb-4 mb-md-0 d-flex justify-content-start" data-aos="zoom-in">
+  <div
+    className="rounded-circle overflow-hidden shadow"
+    style={{
+      width: '250px',
+      height: '250px',
+    }}
+  >
+    <img
+      src={myPhoto}
+      alt="My Photo"
+      className="img-fluid"
+      style={{
+        width: '100%',
+        height: '100%',
+        
+      }}
+    />
+  </div>
+</div>
+
 
           {/* Bio */}
           <div className="col-md-8 text-white" data-aos="fade-left">
