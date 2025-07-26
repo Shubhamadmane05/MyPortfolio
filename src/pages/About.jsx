@@ -167,7 +167,7 @@ const About = () => {
           <div className="col-md-6 mb-4" data-aos="fade-right">
             <div className="card h-100 bg-transparent border border-secondary text-white">
               <div className="card-body">
-                <h5 className="fw-bold">Full Stack Developer Intern <span className="text-muted">| GBM Soft Tech</span></h5>
+                <h5 className="fw-bold">Full Stack Developer Intern |<span className="text-warning"> GBM Soft-Tech</span></h5>
                 <p className="mb-1"><strong>Sep '24 — April '25</strong> | Pune, India</p>
                 <ul className="ps-3">
                   <li>Designed and implemented RESTful APIs using Java and Spring Boot.</li>
@@ -184,7 +184,7 @@ const About = () => {
           <div className="col-md-6 mb-4" data-aos="fade-left">
             <div className="card h-100 bg-transparent border border-secondary text-white">
               <div className="card-body">
-                <h5 className="fw-bold">Java Mentor <span className="text-muted">| Naresh I Technologies</span></h5>
+                <h5 className="fw-bold">Java Mentor |<span className="text-warning"> Naresh I Technologies</span></h5>
                 <p className="mb-1"><strong>Oct '23 — Apr '24</strong> | Hyderabad, India</p>
                 <ul className="ps-3">
                   <li>Reviewed code to ensure efficiency and maintainability.</li>
@@ -201,7 +201,7 @@ const About = () => {
           <div className="col-md-6 mb-4" data-aos="fade-up">
             <div className="card h-100 bg-transparent border border-secondary text-white">
               <div className="card-body">
-                <h5 className="fw-bold">Internship - Full Stack Java Developer <span className="text-muted">| [Company Name]</span></h5>
+                <h5 className="fw-bold">Internship - Full Stack Java Developer <span className="text-muted"></span></h5>
                 <p className="mb-1"><strong>Jan '23 — May '23</strong></p>
                 <ul className="ps-3">
                   <li>Developed full web apps using Java Spring Boot and React.js.</li>

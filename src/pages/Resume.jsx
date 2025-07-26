@@ -1,7 +1,7 @@
 import React from 'react';
-import Shubham_Admane_cv1 from '../assets/Shubham_Admane_cv1.jpg';
-import Shubham_Admane_cv2 from '../assets/Shubham_Admane_cv2.jpg';
-import resumePDF from '../assets/Shubham_Admane_cv.pdf';
+import Shubham_Admane_cv1 from '../assets/Shubham_Admane_resume_1.jpg';
+import Shubham_Admane_cv2 from '../assets/Shubham_Admane_resume_2.jpg';
+import resumePDF from '../assets/Shubham_Admane_resume.pdf';
 import Navbar from '../components/Navbar';
 
 const Resume = () => {
