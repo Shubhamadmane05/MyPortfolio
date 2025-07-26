@@ -11,10 +11,10 @@ export const projects = [
       'A complete web-based system to handle institute operations like student registration, course management, role-based dashboards, exam management and more.',
     tech: ['Java', 'Spring Boot', 'React', 'MySQL'],
     github: '',
-    video: '/assets/projectImages/Admin_panel.mp4',
+    video: '',
     images: [
-      '/assets/projectImages/Cloud_Computing.jpg',
-      '/assets/projectImages/Cloud_Computing.jpg',
+      '',
+      '',
     ],
   },
   {
@@ -28,8 +28,8 @@ export const projects = [
     tech: ['React', 'Spring Boot', 'JWT', 'Redux'],
     github:
       'https://github.com/Shubhamadmane05/Shubhamadmane05-Library-Management-System-with-Security',
-    video: '/assets/projectImages/Admin_panel.mp4',
-    images: ['/assets/projectImages/react_js.jpg'],
+    video: '',
+    images: [''],
   },
   {
     id: 'MyPortfolio',

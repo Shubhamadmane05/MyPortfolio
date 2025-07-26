@@ -38,7 +38,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light fixed-top px-3 shadow-lg" ref={navRef}>
+    <nav className="navbar navbar-expand-lg bg-light fixed-top shadow-lg" ref={navRef}>
       <div className="container-fluid">
         <Link className="navbar-brand fw-bold text-success" to="/">
           MyPortFolio

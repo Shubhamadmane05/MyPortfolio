@@ -22,7 +22,7 @@ const Certificates = () => {
 
   return (
    <>
-   <Navbar />
+   {/* <Navbar /> */}
     <section className="py-5   "
     style={{
         backgroundColor: '#0d1b2a',

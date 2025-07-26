@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 const About = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     <section
       id="about"
       className="py-5 align-content-center"

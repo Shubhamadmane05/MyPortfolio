@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 const Contact = () => {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
     <section
       id="contact"
       style={{

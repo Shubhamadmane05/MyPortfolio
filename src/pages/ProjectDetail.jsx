@@ -11,7 +11,7 @@ const ProjectDetail = () => {
 
     return (
         <section style={{ backgroundColor: '#0d1b2a', minHeight: '100vh', color: '#fff' }}>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="mt-5 pt-3 ">
                 <button
                     className="btn btn-outline-light"

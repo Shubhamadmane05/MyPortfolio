@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
-import myPhoto from '../assets/Myphoto.JPG'; // Replace with your image path
+import myPhoto from '../assets/Myphoto.JPG';
 import Projects from "./Projects";
 import Certificates from "./Certificates";
 import Contact from "./Contact";
@@ -10,7 +10,7 @@ import About from "./About";
 const HomePage = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <section
                 className="hero-section d-flex align-items-center"
                 style={{

@@ -3,6 +3,7 @@ import { FaEye } from 'react-icons/fa';
 import { projects } from '../data/projectsData';
 import Navbar from '../components/Navbar';
 import { FaGithub, FaLaptopCode } from 'react-icons/fa';
+import "./projects.css";
 
 const Projects = () => {
   const cardStyle = {
@@ -24,7 +25,7 @@ const Projects = () => {
       className="py-5"
       style={{ backgroundColor: '#0d1b2a', minHeight: '100vh' }}
     >
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="container">
         <h2 className="text-center fw-bold mb-5 mt-5 text-success">My Projects</h2>
         <div className="row g-4 justify-content-center">
@@ -37,13 +38,13 @@ const Projects = () => {
                   <p>{project.shortDescription}</p>
 
                   {/* Eye Icon Link */}
-                  <Link
-                    to={`/projects/${project.id}`}
-                    className="position-absolute top-0 end-0 m-2 text-white"
-                    title="View Project Details"
-                  >
-                    <FaEye size={20} />
-                  </Link>
+                  <div className="tooltip-wrapper position-absolute top-0 end-0 m-2">
+  <Link to={`/projects/${project.id}`} className="text-white">
+    <FaEye size={20} />
+    <span className="tooltip-text">View Project Details</span>
+  </Link>
+</div>
+
 
                   {project.github && (
                     <a

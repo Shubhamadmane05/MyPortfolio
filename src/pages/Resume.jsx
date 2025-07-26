@@ -13,7 +13,7 @@ const Resume = () => {
                 minHeight: '100vh',
             }}
         >
-            <Navbar />
+            {/* <Navbar /> */}
 
             {/* Download Button (Top) */}
             <div className="container my-4">
