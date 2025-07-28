@@ -7,17 +7,19 @@ import Certificates from "./Certificates";
 import Contact from "./Contact";
 import About from "./About";
 
+
 const HomePage = () => {
     return (
         <>
             {/* <Navbar /> */}
+
             <section
                 className="hero-section d-flex align-items-center"
                 style={{
                     minHeight: '100vh',
                     backgroundColor: '#0d1b2a',
                     color: 'white',
-                    paddingTop: '80px', 
+                    paddingTop: '80px',
                     overflow: 'hidden',
                 }}
             >
